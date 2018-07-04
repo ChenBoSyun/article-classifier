@@ -19,8 +19,15 @@ def word_segmentation(dicts):
 if __name__ == "__main__":
     
     lines = []
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--file',
+                       default='data.jl',
+                       help='input training data file name')
+    args = parser.parse_args()
     
-    with open('5_nomove.jl', 'r' , encoding='utf-8') as file:
+    with open(args.file , 'r' , encoding='utf-8') as file:     
         for line in file:
             lines.append(json.loads(line))
 

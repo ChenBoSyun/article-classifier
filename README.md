@@ -1,2 +1,2 @@
 # article-classifier
-classification on chinese article
+https://nbviewer.jupyter.org/github/ChenBoSyun/article-classifier/blob/master/readme.ipynb
